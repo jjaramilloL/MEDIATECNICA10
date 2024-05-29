@@ -1,0 +1,62 @@
+/******************************************************************************
+Autor:          jaramillo liset
+Fecha:          29-05-2024
+Descripción:    Ejercicio estructura de decisión múltiple
+Se desea un programa que ayude diciendo 
+las preferencias según el género:
+- Si es un hombre menor de edad sus preferencias son:
+    Figuras de acción, Caricaturas, Series TV
+- Si es un hombre mayor de edad sus preferencias son:
+    cine, picnic y filantropía
+- Si es una mujer menor de edad sus preferencias son:
+    Muñecas, Maquillaje, Series TV
+- Si es una mujer mayor de edad sus preferencias son:
+    Maquillaje, Series TV, Cine, filantropía
+*******************************************************************************/
+using System;
+class HelloWorld {
+  static void Main() {
+      
+    string hombreMenor;      
+    string hombreMayor;
+    string mujerMenor;
+    string mujerMayor;
+         
+    //lista de opsiones 
+     Console.WriteLine("tu eres un@");
+     Console.WriteLine("1. mujer Menor");
+     Console.WriteLine("2. mujer Mayor");     
+     Console.WriteLine("3. hombre Menor");  
+     Console.WriteLine("4. hombreMayor");
+     
+      // 3 capturar opción elegida por usuario
+    Console.Write("Digitar opción deseada: ");
+    int opcion = Int32.Parse(Console.ReadLine());
+    
+    
+    
+    // 4 Validar opción elegida
+    if( opcion == 1){
+        Console.WriteLine("sus preferencias son : " + ("Maquillaje, Series TV, Cine, filantropía"));
+    }
+    
+    if( opcion == 2){
+        Console.WriteLine("sus preferencias son: " + (" Muñecas, Maquillaje, Series TV"));
+    }
+    
+   if( opcion == 3){
+        Console.WriteLine("sus preferencias son: " + ("Figuras de acción, Caricaturas, Series TV"));
+    }
+    
+   
+    if( opcion == 4){
+        Console.WriteLine("sus preferencias son: " + ("cine, picnic y filantropía"));
+    }
+    
+   
+
+     
+     
+    
+  }
+}

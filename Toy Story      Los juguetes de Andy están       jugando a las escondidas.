@@ -1,0 +1,36 @@
+/******************************************************************************
+DESCRIPCION: Toy Story
+     Los juguetes de Andy están 
+     jugando a las escondidas. Pide al 
+     usuario las ubicaciones donde buscar 
+     y usa estructuras "si" para determinar 
+     si los juguetes están en la ubicación 
+     correcta o no. Reportar la cantidad 
+     total de juguetes que fueron encontrados 
+     al finalizar 4 rondas.
+*******************************************************************************/
+using System;
+
+class HelloWorld {
+    static void Main() {
+        int juguetesEncontrados = 0;
+       
+        for (int i = 0; i < 4; i++) {
+            Console.WriteLine("Ronda " + (i + 1) + ": ¿Dónde deberíamos buscar las opciones son sala cochera patio dormitorio ?");
+            string ubicacion = (Console.ReadLine());
+         
+            if (ubicacion == "dormitorio" ) {
+                Console.WriteLine("¡Encontramos un juguete en el juguete encontardo fue rex " + ubicacion + "!");
+               
+                if (ubicacion == "cocina") {
+                Console.WriteLine("¡Encontramos un juguete en el juguete encontardo fue crar de papa " + ubicacion + "!");
+        } juguetesEncontrados++;
+            }
+            else {
+                Console.WriteLine("No hay juguetes en la " + ubicacion + ".");
+            }
+        }  
+        Console.WriteLine("Total de juguetes encontrados: " + juguetesEncontrados);
+    
+    }    
+}
